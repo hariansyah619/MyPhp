@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FUTURE SCHOOL - SISTEM INFORMASI AKADEMIK</title>
+        <title>UNIVERSITAS PUTERA BATAM - SISTEM INFORMASI AKADEMIK</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="keywords" content="Universitas, Putera Batam, Universitas Putera Batam, Kuliah, Batam, Perkuliahan, Universitas Batam, University Batam, University, SIA, Sistem Informasi, Sistem Informasi Akademik, Sistem Informasi Mahasiswa" />
         <link href="images/icoupb.png" rel="shortcut icon" />
         <link href="css/stylesiaportal.css" rel="stylesheet" type="text/css">
     
 	<style type="text/css">
-    img {
-        width: 70px;
-		margin: 20px;
-    }
+  	img {
+		 width:65px;
+		 height:65px;
+		 border:1px
+		 margin-bottom: 10px;
+	    }
+	.link_icon {
+				margin-bottom: 20px;
+	           }
+	.title_murid {
+			         position: relative;
+                     top: 1px;
+                     left: 6px;
+                     
+                 }
+	.title_guru {
+			         position: relative;
+                     top: 1px;
+                     left: 9px;
+                     
+                 }
+	.title_forum {
+			         position: relative;
+                     top: 1px;
+                     left: 6px;
+                     
+                 }
+	.title_staff {
+			         position: relative;
+                     top: 1px;
+                     left: 10px;
+                     
+                 }
+	<!-- Membuat efek zoom pada icon -->			 
+    img {   
+           -webkit-transition: all .2s ease-in-out;
+           -moz-transition: all .2s ease-in-out;
+           -o-transition: all .2s ease-in-out;
+           -ms-transition: all .2s ease-in-out;
+            margin: 0 auto;
+            overflow: hidden;  
+         }
+	img:hover {
+                -webkit-transform: scale(1.3); 
+                -moz-transform: scale(1.3);
+                -o-transform: scale(1.3);
+                transform: scale(1.3);
+              }
+    <!-- sudahi efek -->			  
     </style>
 	
 	</head>
@@ -34,8 +79,8 @@
                 <div class="clearfix">                  
                     <div class="link_icon">
                         <a href="http://www.upbatam.ac.id/" class="zoom">
-                            <img src="images/icon_website.jpg" alt="Website Future School" />
-                            <div class="title clearfix">
+                            <img src="images/icon_website.jpg" id="img_icon" alt="Website Future School" />
+                            <div class="title_website">
                                 WEBSITE
                             </div>
                         </a>
@@ -44,7 +89,7 @@
                     <div class="link_icon">
                         <a href="http://sia.upbatam.ac.id/siam/" class="zoom">
                             <img src="images/icon_murid.png" alt="sistim informasi murid future school" />
-                            <div class="title clearfix">
+                            <div class="title_murid">
                                 MURID
                             </div>
                         </a>
@@ -53,7 +98,7 @@
                         <div class="link_icon">
                             <a href="http://sia.upbatam.ac.id/siad/" class="zoom">
                                 <img src="images/icon_guru.jpg" alt="Sistem Informasi Guru Future School" />
-                                <div class="title clearfix">
+                                <div class="title_guru">
                                     GURU
                                 </div>
                             </a>
@@ -62,8 +107,8 @@
 					<div class="link_icon">
                         <a href="http://forum.upbatam.ac.id/" class="putar">
                             <img src="images/icon_forum.png" alt="Forum Future School" width="100" />
-                            <div class="title clearfix">
-                                FORUM
+                            <div class="title_forum">
+                                 FORUM
                             </div>
                         </a>
                     </div>
@@ -71,7 +116,7 @@
 					<div class="link_icon">
                         <a href="http://forum.upbatam.ac.id/" class="putar">
                             <img src="images/icon_staff.jpg" alt="Sistem Informasi Staff Future School" width="100" />
-                            <div class="title clearfix">
+                            <div class="title_staff">
                                 STAFF
                             </div>
                         </a>
